@@ -2,7 +2,11 @@
 #include<stdlib.h>
 #include<string.h>
 #include<ctype.h>
- 
+
+
+/*
+define functions and variables
+*/ 
 int parseDiff();
 int parseSum();
 int parseMod();
@@ -15,6 +19,12 @@ int parseDigits();
 char * equation = NULL;
 int result = 0;
 
+
+
+/*
+start of
+parser and evaluator
+*/
 int parseEquation(){
 	int results = parseDiff();
 	if(*equation == '\0'){
@@ -140,8 +150,18 @@ int parseDigits(){
 	return number;
 }
 
+/*
+end of
+parser and evaluator
+*/
 
 
+
+/*
+Main
+and
+Scanner
+*/
  
 int main(){
 	char ch;
